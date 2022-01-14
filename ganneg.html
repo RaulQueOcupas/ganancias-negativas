@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+				<meta charset="UTF-8">
+				<title>Ganancias Negativas </title>
+</head>
+<body>
+				<h1 align="center">Ganancias Negativas</h1>
+				
+				
+				<button onclick="neg()">Negativas</button>
+				<h2>
+				<script>
+								
+					function neg (){
+					fecha=prompt("Ingresa la fecha de operaciones");
+maxhist=prompt ("Su maximo historico es:\tn");
+
+					document.write (fecha);
+					document.write("<br><br>Su máximo histórico es\t"+maxhist+"<br><br>"	);
+					
+				eleneg=prompt("Elegir la caida del:\n1.Un peso cayendo .10% = .10 Hasta Máx caída de 100% = 1 y se protege con incubados.");
+
+if (eleneg=1){
+
+caida1=prompt ("Elegir lo caido actualmente desde 1\n0.01\n0.02\n0.03\n0.40\n0.50\n0.60\n0.70\n0.80\n0.90\n1.00");
+
+switch (caida1){
+
+case "0.01":
+var diezc=0.10;
+
+
+uno=confirm(diezc+"¿Deseas seguir restando nuevos resultados?\nsi\n no");
+
+if (uno==true){
+
+for(i=0;i<10; i++){
+caida1parasig=prompt ("Elegir lo caido actualmente desde \n0.01\n0.20\n0.30\n0.40\n0.50\n0.60\n0.70\n0.80\n0.90\n1.00");
+
+if (caida1parasig==0.01){
+var diezpara="0.01";
+confirm (diezpara);
+document.write (diezpara+"\t<p>Haz obtenido una ganancia negativa</p><br>");
+}
+}
+
+}
+
+
+}
+
+
+document.write(diezc);
+
+
+								
+				
+}
+//switch dentro del ir general
+}
+					
+					
+//funcion								
+				</script>
+				</h2>
+				
+				<textarea cols="30" rows="30"></textarea>
+</body>
+</html>
